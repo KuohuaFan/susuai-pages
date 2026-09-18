@@ -57,11 +57,17 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   border-bottom: 1px solid rgba(231, 227, 236, 0.78);
   backdrop-filter: blur(18px);
 }
-.brand { display: inline-flex; align-items: center; gap: 0.72rem; text-decoration: none; font-size: 1.06rem; font-weight: 850; letter-spacing: -0.03em; }
+.brand { display: inline-flex; min-width: 0; align-items: center; gap: 0.72rem; text-decoration: none; }
 .brand sup { font-size: 0.5em; vertical-align: super; }
-.brand-mark { display: grid; width: 2.15rem; height: 2.15rem; place-items: center; border-radius: 0.72rem; background: var(--lavender-soft); color: var(--lavender); }
+.brand-mark { display: grid; flex: 0 0 auto; width: 2.15rem; height: 2.15rem; place-items: center; border-radius: 0.72rem; background: linear-gradient(135deg, #9b8af3, #7566df 52%, #4f3aaa); color: white; box-shadow: 0 8px 20px rgba(117, 102, 223, 0.18); }
 .brand-mark svg { width: 1.45rem; height: 1.45rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+.brand-mark svg .brand-horn { stroke: #f6c86e; }
+.brand-mark svg .brand-eye { fill: #f6c86e; stroke: none; }
 .brand-mark.small { width: 1.8rem; height: 1.8rem; font-size: 0.76rem; }
+.brand-copy { display: grid; min-width: 0; line-height: 1.05; }
+.brand-product { color: var(--ink); font-size: 1rem; font-weight: 850; letter-spacing: -0.03em; }
+.brand-signature { margin-top: 0.23rem; color: var(--lavender-dark); font-size: 0.59rem; font-weight: 750; letter-spacing: 0.055em; white-space: nowrap; }
+.brand-signature b { color: #b3aacd; font-weight: 500; }
 .site-nav { display: flex; align-items: center; gap: 1.7rem; }
 .site-nav a { color: #55515d; font-size: 0.86rem; font-weight: 650; text-decoration: none; transition: color 160ms var(--ease-out); }
 .site-nav a:hover { color: var(--ink); }
@@ -206,6 +212,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 
 @media (max-width: 620px) {
   .site-header { padding: 0.8rem 1rem; }
+  .brand { gap: 0.55rem; }
+  .brand-signature { font-size: 0.52rem; letter-spacing: 0.025em; }
   .hero { width: min(100% - 2rem, var(--max-width)); min-height: auto; padding: 4rem 0 4.5rem; }
   .hero h1 { font-size: clamp(3.15rem, 15vw, 5rem); }
   .hero-lead { font-size: 1rem; }
