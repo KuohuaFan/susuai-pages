@@ -1,6 +1,6 @@
 # SuSuAI™ 公開介紹站
 
-![PisuAI | 紫鳥貔貅智慧](./pisuai-brand.svg)
+![PisuAI | 紫鳥貔貅智慧](./pisuai-logo.png)
 
 **PisuAI | 紫鳥貔貅智慧**是本頁與 SuSuAI 介面使用的品牌簽章；**SuSuAI™**仍是台灣民事訴訟書狀自動化工具的產品名稱。
 
@@ -36,7 +36,7 @@
 | `robots.txt` | 搜尋引擎規則 |
 | `sitemap.xml` | 公開網址索引 |
 | `.nojekyll` | 要求 GitHub Pages 原樣提供靜態檔案 |
-| `pisuai-brand.svg` | PisuAI 紫鳥貔貅品牌鎖定 SVG |
+| `pisuai-logo.png` | 依圖一提供的 PisuAI 紫鳥 Logo 製作之方形 PNG |
 
 ## References
 
